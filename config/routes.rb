@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'seconds/page'
+
   get 'pages/landing'
 
   post 'pages/save_user'
