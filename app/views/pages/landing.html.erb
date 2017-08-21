@@ -1,0 +1,20 @@
+<h1>Matias Jara</h1>
+
+<%= form_tag(pages_save_user_path, {class: "alt"}) do %>
+<div class="row uniform">
+  <div class="6u 12u$(xsmall)">
+    <%= text_field_tag "nombre",nil, placeholder: "ingrese nombre" %>
+  </div>
+  <div class="6u$ 12u$(xsmall)">
+    <%= text_field_tag "edad",nil, placeholder: "ingrese edad" %>
+  </div>
+  <div class="12u$">
+    <%= email_field_tag "email",nil, placeholder: "ingrese email" %>
+  </div>
+  <div class="12u$">
+		<ul class="actions">
+			<li><%= submit_tag "Enviar", class:"special" %></li>
+		</ul>
+	</div>
+  <% end -%>
+</div>
